@@ -1,0 +1,5 @@
+# Topics in the phonology of Uralic
+
+This class is a collection of case studies that aim to illustrate several phonological phenomena as they occur in Uralic languages by introducing datasets from prominent European languages such as Finnish or Estonian, as well as from minority languages such as Moksha, Kazym Khanty and Forest Nenets. 
+
+We will touch on consonant gradation, which is a morphophonological rather than an allophonic alternation in Uralic, and look at the data from Estonian and Finnish. Then, two languages will be examined with focus on stress and its side effects: Moksha and Kazym Khanty, which both exhibit the typical Uralic prosodic behaviour of stressing the first syllable (with some additional complications, of course). In Moksha, we will link the stress patterns to rules of glide epenthesis and phonologically conditioned allomorphy. In Khanty, we will attempt to analyse vowel-zero alternations with the aid of the stress pattern. Finally, we will discuss the vowel inventory of Forest Nenets, its length distinction and the vowel schwa, which, in Salminen's (2007) description, is closer to a morphophonological element than to a proper vowel.
