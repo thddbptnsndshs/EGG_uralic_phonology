@@ -25,11 +25,12 @@
 \usepackage[english]{babel}
 \usepackage[backend=biber,
                      style=unified]{biblatex}
-\newcommand{\citeay}[2][]{
-   \citeauthor{#2} (\citeyear[#1]{#2})}
+\newcommand{\citeay}[2][]{\citeauthor{#2} (\citeyear[#1]{#2})}
 \addbibresource{ref.bib}
 \usepackage{fontspec}  
 \setmainfont{Minion 3}
+\usepackage{pifont}
+\usepackage{bbding}
 
 % DRAWING
 
@@ -41,6 +42,7 @@
 \usetikzlibrary{matrix}
 \usetikzlibrary{tikzmark}
 \usetikzlibrary{decorations.shapes}
+\usetikzlibrary{decorations.pathmorphing}
 
 % LINGUISTICS 
 
@@ -112,10 +114,31 @@
 	
 	\begin{enumerate}[$\gg$]
 	\setlength\itemsep{0em}
-		\item voicing \hfill /p/ $\leftrightarrow$ /b/
-		\item fricativisation \hfill /g/ $\leftrightarrow$ /ɣ/
-		\item assimilation (cluster simplification) \hfill /st/ $\leftrightarrow$ /ss/
-		\item approximation \hfill /g/ $\leftrightarrow$ /v/
+		\item voicing : /k/ $\leftrightarrow$ /g/
+		
+		\ex Finnish\\
+			\emph{alanko} -- \emph{alango-n} \hfill `lowland.{\Nom}' -- `lowland.{\Gen}'
+		\xe
+		
+		\item fricativisation : /t/ $\leftrightarrow$ /ð/
+				
+		\pex Inari Saami \parencite{valtonen2022}
+			\a \emph{neeti} /neːti/ -- \emph{neđe} /neðe/ \hfill `marten.{\Nom}' -- `marten.{\Gen}'
+			\a \emph{tupe} /tupe/ -- \emph{tuve} /tuve/ \hfill `cabin.{\Nom}' -- `cabin.{\Gen}'
+		\xe
+		
+		\item assimilation (cluster simplification) : /nd/ $\leftrightarrow$ /nn/
+		
+		\ex Karelian \parencite{ryagoev1993}\\
+			\emph{kandua} -- \emph{kannan} \hfill `to carry' -- `I carry'
+		\xe
+		
+		\item approximation : /g/ $\leftrightarrow$ /v/
+		
+		\ex Karelian \parencite{ryagoev1993}\\
+			\emph{ruga} -- \emph{ruvan} \hfill `soft resin.{\Nom}' -- `soft resin.{\Gen}'
+		\xe
+		
 	\end{enumerate}
 	
 	\noindent Quantitative alternations:
@@ -123,9 +146,48 @@
 	
 	\begin{enumerate}[$\gg$]
 	\setlength\itemsep{0em}
-		\item (de)gemination \hfill /kk/ $\leftrightarrow$ /k/
-		\item alternation between long and super-long geminates \hfill /ppp/ $\leftrightarrow$ /pp/
-		\item loss \hfill /d/ $\leftrightarrow$ ø
+		\item (de)gemination : /kk/ $\leftrightarrow$ /k/
+		
+		\ex Finnish\\
+			\emph{pappi -- papit} \hfill `priest.{\Nom}' -- `priest.{\Pl}'
+		\xe
+		
+		\item alternation between long and super-long geminates : /ppp/ $\leftrightarrow$ /pp/
+		
+		\ex Estonian\\
+			\emph{pikk} /pikkk/ -- \emph{pika} /pikka/ \hfill `long.{\Nom}' -- `long.{\Gen}'
+		\xe
+		
+		\item loss : /b/ $\leftrightarrow$ ø
+		
+		\ex Estonian\\
+			\emph{tuba -- toa} \hfill `room.{\Nom}' -- `room.{\Gen}'
+		\xe
+	Within one paradigm, the set of alternating consonant grades is usually of size 2 but can be larger: Skolt Saami can have 3 or 4 grades alternating within the paradigm of one word \parencite{koponen2022}. This is a problem for Strict CV representations
+	
+	\begin{enumerate}[$\cdot$]
+	\setlength\itemsep{0em}
+		\item Strong grade: long geminate
+		\item Weak grade: short geminate
+		\item Shortened grade: single consonant
+	\end{enumerate}
+	
+	\begin{figure}[H]
+		\includegraphics[scale=.6]{skolt-grades1}
+	\end{figure}
+	
+	\begin{enumerate}[$\cdot$]
+	\setlength\itemsep{0em}
+		\item Lengthened grade: long geminate
+		\item Strong grade: short geminate
+		\item Weak grade: single consonant
+		\item Shortened grade: single consonant
+	\end{enumerate}
+	
+	\begin{figure}[H]
+		\includegraphics[scale=.6]{skolt-grades2}
+	\end{figure}
+		
 	\end{enumerate}
 	Grade alternations have triggers, targets and domains:
 	
@@ -219,7 +281,13 @@ tõlkima               & tõlkida                & tõlgin                 & tõ
 \end{tabular}
 \end{table}
 
-	\section{Questions and answers}
+	\begin{enumerate}[$\cdot$]
+		\item g $\rightarrow$ /k/
+		\item k $\rightarrow$ /kk/
+		\item kk $\rightarrow$ /kkk/
+	\end{enumerate}
+
+		\subsection{Questions and answers}
 	
 \begin{enumerate}[$\gg$]
 	\item How many consonant grades does Estonian have?\\
@@ -325,7 +393,39 @@ strong grade & weak grade \\
 	\xe
 \end{minipage}
 
-	\noindent Below is the summary of the two alternations, conveniently captioned as ``grades'' by \citeay{brown1998}.\newpage
+	\noindent The OT analysis:
+	
+\begin{enumerate}[$\gg$]
+	\item J is a floating segment
+	\item Palatalisation cannot expone J
+	\item Palatalising instead of iotising violates \textsc{MaxFlt} and base-final palatalised labials are banned in the output
+	\item *\textsc{MAP}(lab, pal) $\Rightarrow$ no b/ž-like alternations
+	\item Epenthesis of /l\textsuperscript{j}/ results
+\end{enumerate}
+
+	\ex\label{ex:tableb}OT table for a \textit{b}-final stem\\ 
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+/l\textsuperscript{j}ub/ + /Ju/ & {\sc MaxFlt} & *MAP(lab,pal) & DEP & {\sc Ident}(place) \\ \hline
+l\textsuperscript{j}ub\textsuperscript{j}u        & *!     &               &     &              \\ \hline
+\HandRight{} l\textsuperscript{j}ubl\textsuperscript{j}u       &        &               & *   &              \\ \hline
+l\textsuperscript{j}užu         &        & *!            &     & *            \\ \hline
+l\textsuperscript{j}ubžu        &        & *!            & *   &              \\ \hline
+\end{tabular}
+	\xe
+	
+	\ex\label{t:nOT} Putative OT table for a \textit{n}-final stem -- the correct form is ruled out by \textsc{MaxFlt}\\
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+/klon/ + /Ju/ & {\sc MaxFlt} & *MAP(lab,pal) & DEP & {\sc Ident}(place) \\ \hline
+klon\textsuperscript{j}u      & *!     &               &     &              \\ \hline
+\HandRight{} klonl\textsuperscript{j}u    &        &               & *   &              \\ \hline
+kložu        &        & *!            &     & *            \\ \hline
+klonžu               &        & *!            & *   &              \\ \hline
+\end{tabular}
+	\xe
+
+	\noindent Below is the summary of the two alternations, conveniently captioned as ``grades'' by \citeay{brown1998}.
 	
 	\ex\label{t:threeforms} Three forms of consonants, \citeauthor{brown1998} (1998, Table 5) \\ 
 \begin{tabular}{lll}
