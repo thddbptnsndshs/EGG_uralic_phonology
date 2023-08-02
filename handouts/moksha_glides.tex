@@ -64,6 +64,8 @@
 \newleipzig {npst} {npst} {non-past}
 \newleipzig {lat} {lat} {lative case}
 \newleipzig {cn} {cn} {connegative}
+\newleipzig {freq} {freq} {frequentative}
+\newleipzig {ill} {ill} {illative case}
 
 \lingset{numoffset=0ex, textoffset=.6ex, belowglpreambleskip=0ex, aboveglftskip=0ex, belowexskip=2ex, aboveexskip=1ex}
 
@@ -76,7 +78,7 @@
 
 	\section{Basic facts}
 	
-	Moksha < Mordvinic < Uralic, European part of Russia, Mordovia Republic and neighbouring regions
+	Moksha < Mordvinic < Uralic, European part of Russia, Mordovia Republic and neighbouring regions; central dialect from Lesnoye Tsibaevo
 	
 	\begin{figure}[H]
 		\centering
@@ -87,14 +89,21 @@
 	
 	\noindent Vowel and consonant inventories \parencite{kukhto2018}
 	
-\begin{minipage}[t]{0.45\linewidth}
-	\begin{figure}[H]
-		\includegraphics[scale=.66]{mok-vowels}
-		\hfill
-	\end{figure}
+\begin{minipage}{0.45\linewidth}
+
+\begin{table}[H]
+\begin{tabular}{cccccc}
+\toprule
+\multicolumn{2}{l}{i} &  & \multicolumn{2}{l}{(ɨ)} & u \\
+e          & \multicolumn{3}{l}{(ɘ)}    & ə          & o \\
+\multicolumn{2}{l}{ɛ} &  & \multicolumn{2}{l}{a}   &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.45\linewidth}
+\begin{minipage}{0.45\linewidth}
 \begin{table}[H]
 \begin{tabular}{lllllll}
 \toprule
@@ -113,27 +122,111 @@ p b &     & \begin{tabular}[c]{@{}l@{}}t d\\ t' d'\end{tabular} &               
 \end{minipage}
 
 	\begin{enumerate}[$\gg$]
-	\setlength\itemsep{0em}
-		\item Contrastive voicing in stops AND glides
 		\item Contrastive palatalisation
-		\item /x/ only in loanwords
+		
+			\pex 
+				\a \emph{mar} -- \emph{mar'} \hfill `pile' -- `apple'
+				\a \emph{kal} -- \emph{kal'} \hfill `fish' -- `willow'
+			\xe
+			
+		\item Contrastive voicing in stops, fricatives and sonorants \parencite{kukhto2018}
+		
+			\pex
+				\a \emph{katə} -- \emph{kadə} \hfill `cat' -- `leave.{\Cn}'
+				\a \emph{t'asə} -- \emph{t'azə} \hfill `(be) here' -- `(come) here'
+				\a \emph{mar̥'-n'ə} -- \emph{mar'-n'ə} \hfill `apple-{\Def}.{\Pl}' -- `apple-{\Fsg}.{\Poss}.{\Pl}'
+			\xe
+					
+		\item /x/ only occurs in loanwords
+		
+			\pex 
+				\a \emph{xul'igat-t'n'ə} \hfill `hooligan-{\Def}.{\Pl}'
+				\a \emph{xalad'il'n'ək} \hfill `fridge'
+			\xe
+			
+		\item {[ɨ]} is in complementary distribution with [i]: [i] after palatalised consonants, [ɨ] otherwise
+		
+			\ex \emph{ksti} [ɨ] -- \emph{kšt'i} [i] \hfill `berry' -- `dance.{\Cn}'
+			\xe
+		\item Schwa is fronted after palatalised consonants and becomes [ɘ]
+		
+			\ex \emph{mol'əms} [ɘ] \hfill `to go'
+			\xe
+		
+	\end{enumerate}
+	There are almost no restrictions on initial or final clusters in Moksha:
+	
+	\pex CC/CCC onsets
+		\a \emph{kši} \hfill `bread'
+		\a \emph{ksti} \hfill `berry'
+		\a \emph{ftal} \hfill `back, behind'
+	\xe
+	
+	\pex CC/CCC codas in non-derived words
+		\a \emph{po\v{c}f} \hfill `flour'
+		\a \emph{traks} \hfill `cow'
+		\a \emph{ir̥'ks} \hfill `rib'
+	\xe
+	
+	\pex~CCCC/CCCCC clusters on morpheme boundaries
+		\a \emph{ir̥'ks-t} \hfill `rib-{\Pl}'
+		\a \emph{kstikst} \hfill `berry garden.{\Pl}'
+		\a \emph{bratksc'} \hfill `fraternise.{\Pst}.{\Tsg}'
+
+	\xe
+		
+	The Moksha stress is conditioned by vowel quality \parencite{kukhto2018}. 
+	
+	\begin{enumerate}[$\gg$]
+	\setlength\itemsep{0em}
+		\item Syllables can be divided into \emph{heavy} (/a ɛ e o/ as nuclei) and \emph{light} (/u i ə/ as nuclei)
+		\item Stress the leftmost heavy syllable
+		\item In all-light words, stress falls on the leftmost syllable
 	\end{enumerate}
 		
-		\section{Data}\label{sec:data}
+		\vspace*{-1em}
+\begin{minipage}[t]{.25\linewidth}
+\ex\label{ex:tyadya}
+	ˈt'ɛd'ɛ \\`mother'
+\xe
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.25\linewidth}
+\ex\label{ex:kuvakastress}
+	kuˈvaka \\`long'
+\xe
+\end{minipage}	
+\hfill
+\begin{minipage}[t]{.4\linewidth}
+\ex\label{ex:kijestress}
+	ˈkijə \\`who'
+\xe
+\end{minipage}
+
+	\noindent Even schwa can be stressable: in words where there are no heavy syllables
+	
+	\ex \emph{t{\'ə}rn-əs'-əm-s} \hfill `shiver-{\Freq}-{\Inf}-{\Ill}'
+	\xe
+	Stressed vowels are significantly longer than the unstressed ones; no reduction occurs in unstressed syllables.
 		
-	Sources of data: chapter on Moksha phonology by \citeay{kukhto2018}, chapter on Moksha morphophonology by \citeay{kozlov2018}, the \href{http://moksha.web-corpora.net}{Moksha corpus} and online fieldwork. A practical transcription adopted from \citeay{toldovaetal2018} is used throughout the paper; the IPA correspondence table is provided in the appendix.
+		\section{Glide insertion}\label{sec:data}
 		
+	Sources of data: 
+	
+	\begin{enumerate}[$\gg$]
+	\setlength\itemsep{0em}
+		\item chapter on Moksha phonology by \citeay{kukhto2018}
+		\item chapter on Moksha morphophonology by \citeay{kozlov2018}
+		\item the \href{http://moksha.web-corpora.net}{Moksha corpus}
+		\item online fieldwork
+	\end{enumerate}
+	Vowel hiatus is usually disallowed in Moksha. This is how it is escaped:
+			
 	\begin{enumerate}[$\gg$]
 	\setlength\itemsep{0em}
 		\item Glide insertion occurs after bases ending in /u/ or /i/ before vowel-initial suffixes \parencite{kozlov2018}
 		\item No glide insertion after monosyllabic bases
 		\item Different glide insertion rules before schwa- and /a/-initial suffixes (reduced vs full vowel)
-	\end{enumerate}
-	Questions that we are going to answer:
-	
-	\begin{enumerate}[$\gg$]
-		\item Is the syllable-counting rule reducible to something? In Strict CV phonology, flat and two-tiered, such rules are particularly difficult to implement.
-		\item How do we model a distinction between reduced and full vowels wrt. glide insertion before them?
 	\end{enumerate}
 				
 			\subsection{Schwa-initial suffixes}
@@ -212,7 +305,7 @@ polysyllabic &                      &                     & vən' & jən'\\
 \label{tab:glidesschwa}
 \end{table}
 	
-	\noindent It is important to note that the glide insertion is not synchronically productive, that is, it does not affect loanwords. The default strategy is to treat /u i/ exactly like other vowels: to drop the schwa altogether (\ref{ex:lw1}--\ref{ex:lw3}). The syllable count is of no importance with loanwords. 
+	\noindent The glide insertion is not synchronically productive -- it does not affect loanwords. The default strategy is to treat /u i/ exactly like other vowels: to drop the schwa altogether (\ref{ex:lw1}--\ref{ex:lw3}). The syllable count is of no importance with loanwords. 
 	
 \begin{minipage}[t]{.3\linewidth}
 \ex\label{ex:lw1}
@@ -231,12 +324,10 @@ polysyllabic &                      &                     & vən' & jən'\\
 	li + ən' $\rightarrow$ li-n' \\ `Li-{\Gen}'
 \xe
 \end{minipage}
-	
-	\noindent Epenthesis of glides is not restricted to schwa-initial suffixes, but behaves differently with the /a/-initial ones. Since there are no suffixes in the Moksha language that strart with /o ɛ e/, no other unreduced vowels can be investigated in the suffix-initial position.
-			
+				
 			\subsection{/a/-initial suffixes}
 			
-	Suffixes that begin with /a/ cause glide epenthesis when attached to /u i/-final bases, as exemplifies in (\ref{ex:jozu}--\ref{ex:vidi}). Those are agreement markers \emph{-an} `{\Fsg}' and \emph{-at} `{\Ssg}' that can mark both verbal and nominal predicates \parencite{kholodilova-np, toldova-clauses}.
+	Suffixes that begin with /a/ cause glide epenthesis when attached to /u i/-final bases. Those are agreement markers \emph{-an} `{\Fsg}' and \emph{-at} `{\Ssg}' that can mark both verbal and nominal predicates \parencite{kholodilova-np, toldova-clauses}.
 	
 \begin{minipage}[t]{.45\linewidth}
 \ex\label{ex:jozu}
@@ -309,10 +400,23 @@ polysyllabic &                     & n   & van &                     \\
 \caption{Suffix \emph{an} `{\Npst}.{\Fsg}' with different kinds of bases}
 \label{tab:glidesan}
 \end{table}
+
+	\noindent Questions that we are going to answer:
+	
+	\begin{enumerate}[$\gg$]
+		\item Is the syllable-counting rule reducible to something? In Strict CV phonology, flat and two-tiered, such rules are particularly difficult to implement.
+		\item Where do the epenthetic glides come from?
+			\begin{enumerate}[$\cdot$]
+			\setlength\itemsep{0em}
+				\item Floating segments?
+				\item Spreading vowels?
+			\end{enumerate}
+		\item How do we model a distinction between reduced and full vowels wrt. glide insertion before them?
+	\end{enumerate}
 			
 			\subsection{Suffixes starting with /u i/}
 			
-	There is one more phenomenon that is relevant to the glide insertion problem. Those are several suffixes in Moksha that start with a high vowel or consist of /u i/ alone, for instance, \emph{-i/j} `{\Npst}.{\Tsg}' and \emph{-u/v/i} `{\Lat}' \parencite{kozlov2018}. As evident from my exposition of these morphemes, they alternate between the vowel and the glide, the lative case marker having an additional variant that appears after palatalised consonants. The distribution of these variants is similar: the glide comes after vowels, the vowel -- after consonants; see (\ref{ex:jakaj}--\ref{ex:mag}) for the {\Tsg} agreement marker and (\ref{ex:viri}--\ref{ex:lavkav}) for the lative.
+	There is one more phenomenon that is relevant to the glide insertion problem. Those are several suffixes in Moksha that start with a high vowel or consist of /u i/ alone, for instance, \emph{-i/j} `{\Npst}.{\Tsg}' and \emph{-u/v/i} `{\Lat}' \parencite{kozlov2018}.
 	
 \begin{minipage}[t]{.3\linewidth}
 \ex\label{ex:jakaj}
@@ -345,32 +449,6 @@ polysyllabic &                     & n   & van &                     \\
 \end{minipage}
 
 	\noindent The examples in (\ref{ex:jakaj}--\ref{ex:lavkav}) show that it is not out of the ordinary for /u i/ in Moksha to alternate with the corresponding glides. The glide insertion is not the only process where these alternations are observable, hence an analysis that can handle the /u i/-suffixes pattern on par with the glide insertion is preferable.
-			
-			\subsection{Stress in Moksha}
-		
-	This section describes the stress pattern in Moksha, which is only at first glance unrelated to the glide insertion. However, as will be shown later, it likely is of great importance.
-	
-	The Moksha stress is conditioned by vowel quality \parencite{kukhto2018}. Syllables can be divided into \emph{heavy} (featuring /a ɛ e o/ as nuclei) and \emph{light} (featuring /u i ə/). The stress is borne by the leftmost heavy syllable (\ref{ex:tyadya}--\ref{ex:kuvakastress}), or, in words without heavy syllables, by the leftmost light one (\ref{ex:kijestress}).\footnote{I will continue to refer to the vowels that constitute the nuclei of heavy and light syllables heavy and light respectively.}
-	
-\begin{minipage}[t]{.25\linewidth}
-\ex\label{ex:tyadya}
-	ˈt'ɛd'ɛ \\`mother'
-\xe
-\end{minipage}
-\hfill
-\begin{minipage}[t]{.25\linewidth}
-\ex\label{ex:kuvakastress}
-	kuˈvaka \\`long'
-\xe
-\end{minipage}	
-\hfill
-\begin{minipage}[t]{.4\linewidth}
-\ex\label{ex:kijestress}
-	ˈkijə \\`who'
-\xe
-\end{minipage}
-
-	\noindent Apart from schwa, the light vowels are precisely those that trigger glide insertion base-finally, unless the word is monosyllabic. In other words, what triggers glide insertion are base-final unstressed light vowels. I will now demonstrate where this generalisation can go, assuming that `heaviness' and `lightness' of syllables, as well as stress, are underlyingly vowel length.
 		
 		\section{Glide epenthesis is conditioned by stress}\label{sec:proposal}
 
@@ -474,7 +552,7 @@ column sep={1.5em,between origins}]
 			
 			\subsection{/u i/-suffixes are consonants}
 			
-	I argue that a similar analysis based on of /u i/ associating to two slots (C and V) can be pursued for the /u i/-initial suffixes, albeit with a change in representations: the /u i/ of these suffixes are better conceived of as underlying consonants. They surface as vowels when there is a base-final empty V to associate to (\ref{fig:shami}) and as consonants, if the V is taken (\ref{fig:jakaj}).
+	I argue that a similar analysis based on of /u i/ associating to two slots (C and V) can be pursued for the /u i/-initial suffixes, albeit with a change in representations: the /u i/ of these suffixes are better conceived of as underlying consonants.
 	
 \begin{minipage}[t]{.45\linewidth}
 			\ex\label{fig:shami} {[šam-i]} \\
@@ -516,7 +594,7 @@ column sep={1.2em,between origins}]
 			\xe
 \end{minipage}	
 	
-	\noindent This claim is motivated by the fact that in Strict CV, the universal syllable structure is CV, that is, every syllabic unit ends in a V-slot, empty or filled. Suppose the initial /u i/ of some suffix is a genuine vowel. If it is floating, it would only surface after consonants, which is not true to the data. With the vowel associated, the analysis gets in conflict with the behaviour of another alternating suffix \emph{u/əv} `{\Pass}', which occurs as \emph{-(ə)v} before and/or after vowels (\ref{ex:savan}--\ref{ex:ucheva}) and is in free variation between \emph{-u} and \emph{-əv} in between consonants (\ref{ex:alternating}). 
+	\noindent With the vowel associated, the analysis gets in conflict with the behaviour of another alternating suffix \emph{u/əv} `{\Pass}', which occurs as \emph{-(ə)v} before and/or after vowels (\ref{ex:savan}--\ref{ex:ucheva}) and is in free variation between \emph{-u} and \emph{-əv} in between consonants (\ref{ex:alternating}). 
 	
 \begin{minipage}[t]{.3\linewidth}
 \ex\label{ex:savan}
@@ -580,8 +658,6 @@ column sep={1.1em,between origins}]
 				\end{tikzpicture}
 			\xe
 \end{minipage}	
-
-	\noindent Such are the /u i/-initial suffixes: while alternating between vowels and glides like the bases that are subject to glide insertion, the latter diverge from the former in their underlying representation: glide insertion happens to base-final vowels (/u i/), but the vowel-glide alternation happens to suffix-initial consonants (/v j/). One may wonder whether glides are really absent from the representations of the bases subject to glide epenthesis, from which comes a possible objection to my account of this phenomenon.
 						
 			\subsection{Are glides floating segments?}
 			
@@ -611,7 +687,7 @@ column sep={1.1em,between origins}]
 \xe
 \end{minipage}
 		
-	Finally, the rule that determines stress placement is not productive either on relatively fresh loanwords -- see the examples of Russian loanwords in (\ref{ex:krushka}--\ref{ex:kniga}), which do not obey the law of stressing the leftmost heavy syllable.
+	\noindent Finally, the rule that determines stress placement is not productive either on relatively fresh loanwords -- see the examples of Russian loanwords in (\ref{ex:krushka}--\ref{ex:kniga}), which do not obey the law of stressing the leftmost heavy syllable.
 	
 \begin{minipage}[t]{.45\linewidth}
 \ex\label{ex:krushka}
@@ -653,20 +729,27 @@ column sep={1.1em,between origins}]
 \xe
 \end{minipage}	
 	
-	The /j/ inserted in between heavy vowels has nothing to do with stress. Final light vowels can only be long in monosyllabic bases with suffixes containing no heavy vowels -- this is the only context where they can be stressed and therefore lengthened. Heavy vowels like /a/, on the other hand, can absolutely be base-final and stressed if there are no other heavy vowels to their left. Consider the example of such base, which is polysyllabic and contains a final stressed heavy vowel (\ref{ex:juma}). No /j/-insertion occurs before \emph{-an}.
+	\begin{enumerate}[$\gg$]
+		\item The /j/ inserted in between heavy vowels has nothing to do with stress
+		\item Heavy vowels like /a/, on the other hand, \emph{can} be base-final and stressed if there are no other heavy vowels on their left
+	\end{enumerate}
 	
-\begin{minipage}[t]{.45\linewidth}
 \ex\label{ex:juma}
 	juma + an $\rightarrow$ juman \\`(I am) lost-{\Fsg}' 
 \xe
-\end{minipage}
-\hfill
-\begin{minipage}[t]{.45\linewidth}
+
+	\noindent Therefore, the /j/-insertion in monosyllabic /a/-final bases can be analysed as an effect of a floating segment without detriment to any generalisations already posited. 
+	
+	\begin{enumerate}[$\gg$]
+		\item Suppose there is a floating glide after every monosyllabic base
+		\item The glide only surfaces before unreduced vowels
+		
 \ex\label{ex:shtajan}
 	šta + an $\rightarrow$ štajan \\`wash-{\Fsg}' 
 \xe
-\end{minipage}	
-
+		
+		\item It is deleted before consonants, before schwa and word-finally
+		
 \begin{minipage}[t]{.3\linewidth}
 \ex\label{ex:shtas}
 	šta + s' $\rightarrow$ štas' \\`wash-{\Pst}.{\Tsg}' 
@@ -683,11 +766,11 @@ column sep={1.1em,between origins}]
 \ex\label{ex:sal}
 	sa + əl' $\rightarrow$ sal' \\`come-{\Ipf}'
 \xe
-\end{minipage}	
+\end{minipage}
 
-	\noindent Therefore, the /j/-insertion in monosyllabic /a/-final bases can be analysed as an effect of a floating segment without detriment to any generalisations already posited. The glide only surfaces before unreduced vowels (\ref{ex:shtajan}) and is deleted before consonants (\ref{ex:shtas}) and at the right edge (\ref{ex:izsa}). Its interaction with schwa-initial suffixes is puzzling, because both the schwa and the floating glide are deleted (\ref{ex:sal}).
+	\end{enumerate}	
 	
-	Since there is no option of making schwa floating as well, which would render spreading of /u i/ before schwa-initial suffixes impossible, we have to restrict the floating glide's ability to associate: it can only associate to a licensed position. Schwa cannot licence the preceding C-slot (\ref{fig:sal}), whereas /a/ can (\ref{fig:sajanlic}).
+	\noindent We have to restrict the floating glide's ability to associate: it can only associate to a licensed position. Schwa cannot licence the preceding C-slot (\ref{fig:sal}), whereas /a/ can (\ref{fig:sajanlic}).
 	
 \begin{minipage}[t]{.45\linewidth}
 			\ex\label{fig:sal} sa + əl' {[sa-l']} \\
@@ -734,9 +817,7 @@ column sep={1.5em,between origins}]
 		\item The glide, however, cannot associate before schwa: recall that it is lost in \emph{sa<j> + əl'} $\rightarrow$ \emph{sal'}
 		\item We still need an explanation of why /u i/ can't spread in monosyllabics
 	\end{enumerate}
-			
-		\section*{Appendix}
-		
+					
 			\subsection*{IPA correspondence table \vspace*{-1em}}
 			
 \begin{minipage}[t]{.3\linewidth}
@@ -816,6 +897,7 @@ a          & a                      \\
 \end{table}
 \end{minipage}	
 
+\newpage
 			\subsection*{List of glossing abbreviations \vspace*{-1.5em}}
 			
 \begin{multicols}{2}
