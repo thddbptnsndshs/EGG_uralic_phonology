@@ -66,6 +66,29 @@ The schwa in both Nenets languages is essentially a syllabicity marker\\\parenci
 \noindent Ударение в ненецких словах не расставлено, так как оно не является фиксированным. \\\parencite[p. 8]{barmich-vello}
 \end{flushright}
 
+		\section{Forest Nenets}
+		
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=.3]{yanao-map}
+	\end{figure}
+		
+	\begin{enumerate}[$\gg$]
+		\item Mainly spoken in Yamalo-Nenets okrug (Northwestern Siberia)
+		\item Closely related but not identical to the Tundra Nenets language
+		\item The number of speakers is very small -- around 1000 people
+		\item Still, the language is still being passed on as L1 to kids living in settlements
+		\item No official alphabet or orthography
+		\item Not taught at school
+	\end{enumerate}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=.063]{nenets-women}
+		\hfill
+		\includegraphics[scale=.198]{tundra}
+	\end{figure}
+
 		\section{Vowels and consonants}
 		
 	We adopt a modified version of Tapani Salminen's phonemic transcription.\\
@@ -134,13 +157,26 @@ Vowel inventory (unstressed syllables)
 		
 		\item /ĕ ŏ/ only occur in monosyllabic open-syllable words like \emph{tŏ} `lake’ or \emph{sʹĕ} `tongue’
 		\item /a ă °/ are in harmony with preceding vowels over /x ʔ/
-	\end{enumerate}
 
 	\pex\label{assim}
-		\a \emph{tŏ-xăna} [tŏhŏna] \hfill `lake-{\Loc}' 
-		\a \emph{dʹĭλʹi-hăna} [dʹĭλλihĭnna] \hfill `month-{\Loc}'
+		\a \emph{tŏ-xăna} [toxona] \hfill `lake-{\Loc}' 
+		\a \emph{dʹĭλʹi-hăna} [dʹĭλλixĭnna] \hfill `month-{\Loc}'
 	\xe
-	
+		\item Basic syllable structure is CV(C)
+		\item Vowel-initial words are very rare
+			\pex Some \#V words from Forest Nenets
+				\a \emph{ăpi} \hfill `bear'
+				\a \emph{ama} \hfill `mom' 
+				\a \emph{ilʹpʹi} \hfill `bear'
+			\xe
+		\item Vowel-zero alternations can occur in the first syllable
+			\pex
+				\a \emph{čĭki} [čĭki] $\sim$ [čki] \hfill `this'
+				\a \emph{pĭtă} [pĭtă] $\sim$ [ptă] \hfill `he/she'
+			\xe
+		\item 
+	\end{enumerate}
+
 		\section{Stress}
 	
 	Stress falls on odd syllables, excluding the final syllable. On long vowels, stress is materialized as even greater length.
@@ -170,7 +206,6 @@ Vowel inventory (unstressed syllables)
 		\item Make the preceding consonant longer:\\ 
 			CVC° -> CVCC
 	\end{enumerate}
-	
 	The effects of schwa are noticeable in contexts where the gemination or vowel lengthening are not attributable to stress, that is, when even-numbered syllables are affected -- in sequences like CVCVC° (\ref{schwabasic}).
 	
 	When the schwa lengthens the vowel/consonant, it is not pronounced: rules 1 and 2 do not apply together with rule 3. 
@@ -179,9 +214,7 @@ Vowel inventory (unstressed syllables)
 		\a \emph{naxaλ°} [naxaaλ] \hfill `cone'
 		\a \emph{pisăn°-xăna} [pisăn(ĭ)xĭna] \hfill `table-{\Ins}'
 	\xe
-	
 	Schwa forms a legitimate syllable, wrt. metrics as well: note how the /n/ in (\ref{nn}) is longer due to occuring after an odd (and therefore stressed) syllable.
-	
 	\pex\label{knife}\a \emph{kăλ°} [kăλλ] \hfill `knife'
 		\a\label{nn}\emph{kăλ°xăna} [kăλλxănna] \hfill `knife-{\Ins}'
 	\xe
@@ -242,7 +275,7 @@ Vowel inventory (unstressed syllables)
 	\xe
 	
 	\pex~\label{}\a \emph{kăλ°} [kăλλ] \hfill `knife'
-		\a \emph{kăλ°-hăttă} [kăλλhăttĭ] $\sim$ [kăλλhăttă] \hfill `knife-{\Abl}'
+		\a \emph{kăλ°-xăttă} [kăλλxăttĭ] $\sim$ [kăλλhăttă] \hfill `knife-{\Abl}'
 	\xe
 	The vowel lengthening effects are similar too: stress preserves length contrast, whereas schwa can lengthen an unstressed and therefore shortened vowel. Recall that /o/ appears as /u/ in unstressed positions.
 	
@@ -255,7 +288,7 @@ Vowel inventory (unstressed syllables)
 			
 	We suspect that stress assignment domain can be extended from word to phrase in connected speech. More data needed.
 	
-	\ex\label{}\emph{tŏ-xănă ŋuʰka kaλʹa} [tŭ.ˈho.na ˈŋuʰ.ka ˈka.λʹa] \hfill `lake-{\Loc} much fish' \xe
+	\ex\label{}\emph{tŏ-xănă ŋuʰka kaλʹa} [tŭ.ˈxo.na ˈŋuʰ.ka ˈka.λʹa] \hfill `lake-{\Loc} much fish' \xe
 	
 	\section{Analysis}
 	
@@ -266,7 +299,6 @@ Vowel inventory (unstressed syllables)
 		\item For short vowels in open syllables, stress must geminate the consonant
 		\item But how can we model length contrast preservation with the empty CV?
 	\end{enumerate}
-	
 	The Strict CV Metrics approach of \citeay{faust-ulfs2018}, \citeay{alexei-ulfs2022}, \citeay{ulfsbjorninntoappear} can help model the effects of schwa, since schwa can lengthen the preceding vowel but this effect cannot be produced by vowel spreading. Incorporation of its metrical prominence, however, could work. Some general remarks on the analysis of stress:
 	
 	\begin{enumerate}[$\gg$]
@@ -316,7 +348,7 @@ column sep={1.5em,between origins}]
 			\xe
 		\end{minipage}
 
-	What will the stress do? The first /a/ in \emph{kata} `grandma' must get increased prominence. The second V of the long vowel does not project -- length does not matter for stress assignment. When an extra empty CV is inserted, the long vowel cannot associate to it, since it would become super-long. So, the CV is incorporated and then deleted.
+	\noindent What will the stress do? The first /a/ in \emph{kata} `grandma' must get increased prominence. The second V of the long vowel does not project -- length does not matter for stress assignment. When an extra empty CV is inserted, the long vowel cannot associate to it, since it would become super-long. So, the CV is incorporated and then deleted.
 	
 			\ex \emph{kata} `grandma' \\
 				\begin{tikzpicture}
@@ -358,7 +390,7 @@ column sep={1.5em,between origins}]
 				\end{tikzpicture}
 			\xe
 			
-	In closed stressed syllables with short vowels, there is no gemination, so stress assignment in these contexts should proceed similarly to open syllables with long vowels.
+	\noindent In closed stressed syllables with short vowels, there is no gemination, so stress assignment in these contexts should proceed similarly to open syllables with long vowels.
 	
 			\ex\label{minchisch}\emph{mĭnʹči} `stomach' \\
 				\begin{tikzpicture}
@@ -437,7 +469,7 @@ column sep={1.5em,between origins}]
 	
 	If Line 2 is already filled, no CV is necessary; otherwise, it appears in order to be incorporated and to fill Line 2. Similar condition has been proposed by \citeay{ulfsbjorninn2021} for Hawu, where compensatory gemination in stressed syllables is observed, too.
 	
-			\ex\label{minchisch}\emph{mĭnʹči} `stomach' \\
+			\ex\label{minchisch2}\emph{mĭnʹči} `stomach' \\
 				\begin{tikzpicture}
 \matrix [matrix of nodes, row sep=0.1em,
 column sep={1.5em,between origins}]
@@ -556,6 +588,10 @@ column sep={1.5em,between origins}]
 \draw (v3.south) -- (V3.north);
 				\end{tikzpicture}
 			\xe
+			
+	\section*{Glossing abbreviations}
+	
+\printglossaries
 
 \printbibliography
 \end{document}
